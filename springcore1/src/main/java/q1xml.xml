@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+ 	<bean class="com.q1.Address" name="address1">
+ 		<property name="street"><value>high road</value></property>
+ 		<property name="city"><value>pasadena</value></property>
+ 		<property name="state"><value>california</value></property>
+ 		<property name="zip"><value>123456</value></property>
+ 		<property name="country"><value>US</value></property>
+ 	</bean>
+ 	<bean class="com.q1.customer" name="customer1">
+ 		<property name="customerId"><value>1656217</value></property>
+ 		<property name="customerNmae"><value>sheldon</value></property>
+ 		<property name="customerContact"><value>632878325</value></property>
+ 		<property name="address" ref="address1"></property>
+ 		
+ 	</bean>
+</beans>
