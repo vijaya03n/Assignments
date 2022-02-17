@@ -7,7 +7,7 @@ public class Assignment3Q1 {
 	
 	public static void main(String[] args) throws IOException {
 		
-		File file = new File("E:\\8th sem\\internship\\Core Java\\String Assignment\\Java11Assignments_StudentList.txt");
+		File file = new File("C:\\StudentList.txt");
 		
 		Scanner sc = new Scanner(file);
 		
