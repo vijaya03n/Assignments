@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>question13</h1>
+</head>
+<body>
+    <h1 id="ques13a"></h1>
+    <h1 id="ques13b"></h1>
+    <h1 id="ques13c"></h1>
+<script>
+ const numbers = [1,2,3,4,5];
+
+let sumfor = 0;
+let sumwhile = 0;
+let sumdowhile = 0;
+let i=0,j=0;
+
+for (let i = 0; i < numbers.length; i++) {
+  sumfor += numbers[i] ;
+}
+while (numbers[i]) {
+  sumwhile += numbers[i];
+  i++;
+}
+
+do{
+  sumdowhile+=numbers[j];
+  j++;
+}while(numbers[j]);
+
+
+
+document.getElementById("ques13a").innerHTML = "using for loop: "+sumfor;
+document.getElementById("ques13b").innerHTML = "using while loop: "+sumwhile;
+document.getElementById("ques13c").innerHTML = "using do while loop: "+sumdowhile;
+</script>
+</body>
+</html>

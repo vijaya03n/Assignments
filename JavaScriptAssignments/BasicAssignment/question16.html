@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>question16</h1>
+</head>
+<body>
+    <table id="myTable" border="1"> 
+    </table>
+    <form> 
+    <input type="button" onclick="createTable()" value="Create the table"> 
+    </form>
+    
+<script>
+ function createTable()
+{
+rn = window.prompt("Input number of rows");
+cn = window.prompt("Input number of columns");
+  
+ for(var r=0;r<parseInt(rn);r++)
+  {
+   var x=document.getElementById('myTable').insertRow(r);
+   for(var c=0;c<parseInt(cn);c++)  
+    {
+     var y=  x.insertCell(c);
+     y.innerHTML="Row-"+r+" Column-"+c; 
+    }
+   }
+}
+</script>
+</body>
+</html>

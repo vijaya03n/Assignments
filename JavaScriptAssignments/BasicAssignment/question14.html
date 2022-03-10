@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>question14</h1>
+</head>
+<body>
+    <h1 id="ques14"></h1>
+    <h2 id="ques14a"></h2>
+    <h2 id="ques14b"></h2>
+    <h2 id="ques14c"></h2>
+    <h2 id="ques14d"></h2>
+<script>
+ 
+ var arr = [];
+while(arr.length < 100){
+    var r = Math.floor(Math.random() * 100) + 1;
+    if(arr.indexOf(r) === -1) arr.push(r);
+}
+document.getElementById("ques14").innerHTML = arr;
+
+arr.sort(function(a, b){return a - b});
+document.getElementById("ques14a").innerHTML = "largest: "+arr[99];
+document.getElementById("ques14b").innerHTML = "smallest: "+arr[0];
+let oddcount=0,evencount=0;
+for(let i=0;i<arr.length;i++){
+  if(arr[i]%2==0){
+    evencount++;
+  }
+  else{
+    oddcount++;
+  }
+}
+function evenodd(){
+  if(evencount>oddcount){
+    return "even count is high";
+  }
+  if(oddcount>evencount){
+    return "odd count is high";
+  }
+  else{
+    return "equal count";
+  }
+}
+document.getElementById("ques14c").innerHTML = evenodd();
+let sum=0,avg;
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i] ;
+  avg=sum/100;
+}
+document.getElementById("ques14d").innerHTML = "sumt: "+sum+" , average: "+avg;
+</script>
+</body>
+</html>

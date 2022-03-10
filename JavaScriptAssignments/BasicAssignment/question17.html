@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>question17</h1>
+</head>
+<body>
+    <h1 id="ques17"></h1>
+   
+<script>
+ let rotate = function(arr, numberOfShifts) {
+    let deletedArray = arr.splice(arr.length-numberOfShifts);
+    for (let i=0; i < deletedArray.length; i++){
+        arr.splice(i,0,deletedArray[i]);
+    }
+    
+    return arr;
+};
+document.write(rotate( [1,2,3,4,5,6],2));
+</script>
+</body>
+</html>

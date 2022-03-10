@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>question12</h1>
+</head>
+<body>
+  <button onclick="myFunction()">Try it</button>
+    <h1 id="ques12">ababcdababefgababhiab</h1>
+<script>
+ function myFunction() {
+  let text = document.getElementById("ques12").innerHTML;
+
+  function longestToken(text){
+
+    
+    return `${text}`+"1";
+
+  }
+
+  document.getElementById("ques12").innerHTML =
+  longestToken(text);
+}
+ </script>
+</body>
+</html>

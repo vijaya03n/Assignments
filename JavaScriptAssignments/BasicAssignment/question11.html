@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>question11</h1>
+</head>
+<body>
+  <button onclick="myFunction()">Try it</button>
+
+    <h1 id="ques11"></h1>
+    <script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("ques11").innerHTML = points;  
+
+function myFunction() {
+  points.reverse(function(a, b){return Math.random()});
+  document.getElementById("ques11").innerHTML = points;
+}
+</script>
+</body>
+</html>
